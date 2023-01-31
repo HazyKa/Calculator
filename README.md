@@ -7,3 +7,6 @@ erros, procuro na internet para resolver sozinho.
 Este projeto foi mais complicado, pois mesmo apos ver o tutorial tive bastante dificuldade
 de por em códigos. Tive que usar bastante a internet para saber como fazer os cálculos e
 entre outras funções.
+
+
+Hospedado: https://calculadorahazy.netlify.app
