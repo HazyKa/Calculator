@@ -39,7 +39,7 @@ const calcular = () => {
         novoNumero = true;
         const numeroAtual = parseFloat(display.textContent.replace(',', '.'));
         let resultado;
-        switch (operador) {
+        switch (operador) {4
             case '+':
                 resultado = numeroAnterior + numeroAtual;
                 break;
