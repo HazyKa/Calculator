@@ -35,17 +35,34 @@ const selecionarOperador = (evento) => {
 const operacaoPendente = () => operador != undefined;
 
 const calcular = () => {
-    if(operacaoPendente()){
+    if (operacaoPendente()) {
         novoNumero = true;
-        const numeroAtual = parseFloat(display.textContent.replace (',','.'));
-        const resultado = eval (`${numeroAnterior} ${operador} ${numeroAtual}`);
-        atualizarDisplay (resultado);
+        const numeroAtual = parseFloat(display.textContent.replace(',', '.'));
+        let resultado;
+        switch (operador) {4
+            case '+':
+                resultado = numeroAnterior + numeroAtual;
+                break;
+            case '-':
+                resultado = numeroAnterior - numeroAtual;
+                break;
+            case '*':
+                resultado = numeroAnterior * numeroAtual;
+                break;
+            case '÷':
+                resultado = numeroAnterior / numeroAtual;
+                break;
+            default:
+                return;
+        }
+        atualizarDisplay(resultado.toLocaleString('BR'));
     }
-}
+};
+
 
 const ativarIgual = () => {
     calcular();
-    operador = undefined
+    operador = undefined;
 }
 
 const limpaDisplay = () => display.textContent = '';
